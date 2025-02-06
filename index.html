@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out this form to help us improve.</p>
+    </header>
+
+    <form id="survey-form">
+        <!-- name of shield -->
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Introduce your name" required>
+
+        <!-- Shield of Email -->
+        <label id="email-label" for="email">Email adress:</label>
+        <input type="email" id="email" name="email" placeholder="Introduce your email adress" required>
+
+        <!-- Shield of Númber -->
+        <label id="number-label" for="number">Age (Optional):</label>
+        <input type="number" id="number" name="number" placeholder="Introduce your age" min="18" max="100" required>
+
+        <!-- Shield of Selectión -->
+        <label for="dropdown">¿What option do you preffer?</label>
+        <select id="dropdown" name="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+
+        <!-- Button Radio -->
+        <fieldset>
+            <legend>Génder:</legend>
+            <label>
+                <input type="radio" name="gender" value="male"> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+        </fieldset>
+
+        <!-- Box for verification -->
+        <fieldset>
+            <legend>Interest:</legend>
+            <label>
+                <input type="checkbox" name="interests" value="tecnología"> Technology
+            </label>
+            <label>
+                <input type="checkbox" name="interests" value="arte"> Art
+            </label>
+            <label>
+                <input type="checkbox" name="interests" value="deportes"> Sports
+            </label>
+        </fieldset>
+
+        <!-- Field of Textarea -->
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here...."></textarea>
+
+        <!--Button of submit -->
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
